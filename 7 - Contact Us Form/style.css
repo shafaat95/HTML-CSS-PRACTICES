@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 85%;
+    padding: 30px 60px 40px 40px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-side{
+    width: 25%;
+    height: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+.left-side::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 70%;
+    background: #afafb6;
+}
+.details{
+    margin: 14px;
+    text-align: center;
+}
+.left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+.address .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.left-side .details .text-one,
+.left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+}
+/* Right Side */
+.right-side{
+    width: 75%;
+    margin-left: 90px;
+}
+.right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+form{
+    margin-top: 10px;
+}
+.input-box{
+    width: 100%;
+    height: 45px;
+    margin: 14px 0;
+}
+form .input-box input,textarea{
+    width: 100%;
+    height: 100%;
+    background: #F0F1F8;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    padding: 0 15px;
+    resize: none;
+}
+.message{
+    min-height: 110px;
+    margin-top: 6px;
+    textarea{
+        padding: 10px 15px;
+    }
+}
+.buttons input{
+    font-size: 18px;
+    background: #3e2093;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        background: #5029bc;
+    }
+}
